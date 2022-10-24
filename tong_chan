@@ -1,0 +1,14 @@
+#1. Hàm Tong_chan(A), trả lại tổng các số chẵn của dãy A cho trước.
+
+def Tong_chan(A):
+    tong = 0
+    i = 0
+    while i < len(A):
+        if A[i] % 2 == 0:
+            tong += A[i]
+        i = i + 1
+    return tong
+
+a = [0, 7, 8, 15, 12, 19, 24, 18, 28, 7, 114]
+print("Tong:", Tong_chan(a))
+      
